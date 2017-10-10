@@ -25,7 +25,7 @@ public class TitleTable {
     public static final TitleTable getInstance() {
         return TitleListHolder.INSTANCE;
     }
-    /*
+    
 	public Object createtitle(String string, String string2) {		
 		boolean result=true;
 		int flag=0;
@@ -46,7 +46,7 @@ public class TitleTable {
 			logger.info(String.format("Operation:Create New Title;Title Info:[%s,%s];State:Fail;Reason:The ISBN already existed.", string,string2));
 		}
 		return result;	
-	}*/
+	}
 	public boolean lookup(String string) {
 		boolean result=true;
 		int flag=0;
