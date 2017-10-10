@@ -154,7 +154,7 @@ public class LoanTable {
 		String datestr=format1.format(date);
 		return datestr;
 	}
-	/*
+	
 	public Object returnItem(int j, String string, String string2, Date date) {
 		String result="";
 		int flag=0;
@@ -185,7 +185,7 @@ public class LoanTable {
 		
 		return result;
 	}
-	*/
+	
 	public List<Loan> getLoanTable() {
 		return loanList;
 	}
