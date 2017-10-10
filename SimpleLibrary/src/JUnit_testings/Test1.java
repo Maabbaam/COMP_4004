@@ -180,7 +180,7 @@ public class Test1 {
 		assertEquals("This should pass","Copynumber Invalid",LoanTable.getInstance().createloan(1, "9781442616899", "2", new Date() ));
 		
 	}
-	/*
+	
 	
 	@Test
 	public void testReturnItem(){
@@ -194,6 +194,7 @@ public class Test1 {
 		
 		
 	}
+	/*
 	
 	
 	@Test
