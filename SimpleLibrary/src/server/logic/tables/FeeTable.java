@@ -77,7 +77,7 @@ public class FeeTable {
 		}
 		return fee;
 	}
-	/*
+	
 	public void applyfee(int j, long time) {
 		int flag=0;
 		int index=0;
@@ -114,7 +114,7 @@ public class FeeTable {
 		
 		
 	}
-	*/
+	
 	public List<Fee> getFeeTable() {
 		return feeList;
 	}
@@ -125,7 +125,7 @@ public class FeeTable {
     	}
     	logger.info(String.format("Operation:Initialize FeeTable;FeeTable: %s", feeList));
 	}
-	/*
+	
 	public Object payfine(int i) {
 		String result="DELETE IN PAY FINE";
 		boolean oloan= LoanTable.getInstance().looklimit(i);
@@ -156,7 +156,7 @@ public class FeeTable {
 		//System.out.print(result);
 		return result;
 	}
-	*/
+	
 	
 
 }
