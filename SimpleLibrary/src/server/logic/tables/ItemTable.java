@@ -27,7 +27,7 @@ public class ItemTable {
     public static final ItemTable getInstance() {
         return ItemListHolder.INSTANCE;
     }
-    /*
+    
 	public Object createitem(String string) {
 		boolean result=true;
 		result=TitleTable.getInstance().lookup(string);
@@ -48,7 +48,7 @@ public class ItemTable {
 			logger.info(String.format("Operation:Create New Item;Item Info:[%s,%s];State:Fail;Reason:No such ISBN existed.", string,"N/A"));
 		}
 		return result;
-	}*/
+	}
 	public boolean lookup(String string, String string2) {
 		boolean result=true;
 		int flag=0;
