@@ -82,13 +82,14 @@ public class Test1 {
 		
 		
 	}
-	/*
+	
 	@Test
 	public void findUser(){
 		
 		assertEquals("This should pass",true, UserTable.getInstance().lookup(3) );
 		
 	}
+	
 	@Test
 	public void findTitle(){
 		
@@ -179,6 +180,7 @@ public class Test1 {
 		assertEquals("This should pass","Copynumber Invalid",LoanTable.getInstance().createloan(1, "9781442616899", "2", new Date() ));
 		
 	}
+	/*
 	
 	@Test
 	public void testReturnItem(){

@@ -3907,4 +3907,23 @@
 @2017-10-10 19:38:14 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
 @2017-10-10 19:38:14 INFO  String:45 - Operation:Create New Item;Item Info:[Title,1];State:Success
 @2017-10-10 19:38:14 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
+@2017-10-10 19:40:47 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 19:40:47 INFO  String:43 - Operation:Create New Title;Title Info:[Title,Author];State:Success
+@2017-10-10 19:40:47 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 19:40:47 INFO  String:45 - Operation:Create New Item;Item Info:[Title,1];State:Success
+@2017-10-10 19:40:47 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
+@2017-10-10 19:41:32 INFO  String:26 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 19:41:32 INFO  String:46 - Operation:Create New User;User Info:[maab,123];State:Success
+@2017-10-10 19:41:32 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 19:41:32 INFO  String:43 - Operation:Create New Title;Title Info:[Title,Author];State:Success
+@2017-10-10 19:41:32 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 19:41:32 INFO  String:45 - Operation:Create New Item;Item Info:[Title,1];State:Success
+@2017-10-10 19:41:32 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
+@2017-10-10 19:42:40 INFO  String:26 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 19:42:40 INFO  String:46 - Operation:Create New User;User Info:[maab,123];State:Success
+@2017-10-10 19:42:40 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 19:42:40 INFO  String:43 - Operation:Create New Title;Title Info:[Title,Author];State:Success
+@2017-10-10 19:42:40 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 19:42:40 INFO  String:45 - Operation:Create New Item;Item Info:[Title,1];State:Success
+@2017-10-10 19:42:40 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
 @

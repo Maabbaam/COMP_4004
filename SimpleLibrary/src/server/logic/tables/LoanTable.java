@@ -27,6 +27,7 @@ public class LoanTable {
     public static final LoanTable getInstance() {
         return LoanListHolder.INSTANCE;
     }
+    /*
 	public Object createloan(int i, String string, String string2, Date date) {
 		String result="";
 		boolean user=UserTable.getInstance().lookup(i);
@@ -65,7 +66,7 @@ public class LoanTable {
 		}
     	return result;
 	}
-	
+	*/
 	
 	public boolean lookup(int j, String string, String string2) {
 		boolean result=true;
