@@ -70,7 +70,7 @@ public class Test1 {
 	
 		
 	}
-	/*
+	
 	@Test
 	public void addItemTest(){
 		
@@ -82,6 +82,7 @@ public class Test1 {
 		
 		
 	}
+	/*
 	@Test
 	public void findUser(){
 		

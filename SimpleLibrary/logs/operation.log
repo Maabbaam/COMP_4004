@@ -3896,4 +3896,8 @@
 @2017-10-10 19:34:12 INFO  String:46 - Operation:Create New User;User Info:[maab,123];State:Success
 @2017-10-10 19:34:12 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
 @2017-10-10 19:34:12 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
+@2017-10-10 19:36:50 INFO  String:26 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 19:36:50 INFO  String:46 - Operation:Create New User;User Info:[maab,123];State:Success
+@2017-10-10 19:36:50 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 19:36:50 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
 @
