@@ -59,7 +59,7 @@ public class Test1 {
 		
 	}
 	
-	/*
+	
 	@Test
 	public void addTitleTest(){
 		
@@ -70,7 +70,7 @@ public class Test1 {
 	
 		
 	}
-	
+	/*
 	@Test
 	public void addItemTest(){
 		
