@@ -28,7 +28,7 @@ public class UserTable {
     public static final UserTable getInstance() {
         return UserListHolder.INSTANCE;
     }
-    /*
+    
 	public Object createuser(String string, String string2) {		
 		boolean result=true;
 		int flag=0;
@@ -49,7 +49,7 @@ public class UserTable {
 			logger.info(String.format("Operation:Create New User;User Info:[%s,%s];State:Fail;Reason:The User already existed.", string,string2));
 		}
 		return result;	
-	}*/
+	}
 	public boolean lookup(int j) {
 		boolean result=true;
 		int flag=0;
