@@ -97,7 +97,7 @@ public class TitleTable {
 	public List<Title> getTitleTable() {
 		return titleList;
 	}
-	/*
+	
 	public String monitorSystem(){
 		String system = "List of Users:" ;
 		
@@ -126,6 +126,6 @@ public class TitleTable {
 	}
     
 	
-*/
+
 
 }
