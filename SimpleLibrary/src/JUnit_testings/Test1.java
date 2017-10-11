@@ -103,6 +103,21 @@ public class Test1 {
 		TitleTable.getInstance().createtitle("BorrowTitle1", "Author");
 		ItemTable.getInstance().createitem("BorrowTitle1");
 		
+		TitleTable.getInstance().createtitle("Justs", "Author");
+		ItemTable.getInstance().createitem("Justs");
+		/*
+		if (usr== "Mazen"){
+			assertEquals("This should pass","The Item is Not Available",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Mazen"), book, "1", new Date())) ;
+			return;
+		}
+		
+		if (usr== "Just"){ 
+			assertEquals("This should pass","The Maximun Number of Items is Reached",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Just"), "BorrowTitle14", "1", new Date())) ;
+			
+			return;
+			
+		}*/
+		
 
 		TitleTable.getInstance().createtitle("BorrowTitle2", "Author");
 		ItemTable.getInstance().createitem("BorrowTitle2");
