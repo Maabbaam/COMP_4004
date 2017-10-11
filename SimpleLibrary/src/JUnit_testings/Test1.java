@@ -211,7 +211,7 @@ public class Test1 {
 		assertEquals("sucess","success", FeeTable.getInstance().payfine(0) );
 		
 	}
-	/*
+	
 	@Test
 	public void testRenewLoan(){
 
@@ -259,6 +259,8 @@ public class Test1 {
 		
 		
 	}
+	
+	/*
 	
 	
 	@Test

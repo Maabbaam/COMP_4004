@@ -102,7 +102,7 @@ public class LoanTable {
 		}
 		return result;
 	}
-
+	/*
 	public Object renewal(int j, String string, String string2, Date date) {
 		String result="";
 		int flag=0;
@@ -148,6 +148,7 @@ public class LoanTable {
 		}
 		return result;
 	}
+	*/
     
 	private String dateformat(Date date){
 		DateFormat format1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
