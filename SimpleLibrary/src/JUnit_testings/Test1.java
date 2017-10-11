@@ -329,12 +329,12 @@ public class Test1 {
 	
 		assertEquals("this is useless","The Title Does Not Exist", TitleTable.getInstance().delete("I dont exist"));
 	}
-	/*
+	
 	@Test
 	public void testMonitorSystem(){
 		
-		System.out.print(TitleTable.getInstance().toString());
-		String test = TitleTable.getInstance().toString();
+		System.out.print(TitleTable.getInstance().monitorSystem());
+		String test = TitleTable.getInstance(). monitorSystem();
 		for (int i = 0; i < UserTable.getInstance().getUserTable().size() ; i++){
 		
 			if (test.contains(UserTable.getInstance().getUserTable().get(i).toString())) {}
@@ -355,7 +355,7 @@ public class Test1 {
 		
 		
 		
-	}*/
+	}
 	
 }
 	

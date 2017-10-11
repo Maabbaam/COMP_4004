@@ -97,8 +97,8 @@ public class TitleTable {
 	public List<Title> getTitleTable() {
 		return titleList;
 	}
-	
-	public String toString(){
+	/*
+	public String monitorSystem(){
 		String system = "List of Users:" ;
 		
 		for (int i = 0; i < UserTable.getInstance().getUserTable().size() ; i++){
@@ -126,6 +126,6 @@ public class TitleTable {
 	}
     
 	
-
+*/
 
 }
