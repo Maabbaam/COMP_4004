@@ -5354,4 +5354,118 @@
 @2017-10-10 20:07:17 INFO  String:110 - Operation:Apply OutStanding Fee;Fee Info:[1,0];State:Success
 @2017-10-10 20:07:17 INFO  String:154 - Operation:Pay Fine;Fee Info:[0,0];State:Success
 @2017-10-10 20:07:17 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Title1,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title1,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Title2,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title2,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Title3,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title3,1];State:Success
+@2017-10-10 20:08:11 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-10 08:08:11,0]]
+@2017-10-10 20:08:11 INFO  String:26 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-10 20:08:11 INFO  String:100 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-10 20:08:11 INFO  String:126 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[1,Title1,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[1,Title2,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[1,Title3,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Title7,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title7,1];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[2,Title7,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[Jones,Jones];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[JonesBook,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[JonesBook,1];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[5,JonesBook,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:132 - Operation:Renew Item;Loan Info:[5,JonesBook,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:135 - Operation:Renew Item;Loan Info:[5,JonesBook,1,2017-10-10 08:08:11];State:Fail;Reason:Renewed Item More Than Once for the Same Loan.
+@2017-10-10 20:08:11 INFO  String:139 - Operation:Renew Item;Loan Info:[8,9781442668584,1,2017-10-10 08:08:11];State:Fail;Reason:The loan does not exist.
+@2017-10-10 20:08:11 INFO  String:147 - Operation:Renew Item;Loan Info:[0,9781442668584,1,2017-10-10 08:08:11];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle1,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle1,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle2,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle2,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle3,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle3,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle4,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle4,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle5,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle5,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle6,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle6,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle7,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle7,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle8,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle8,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle9,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle9,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle10,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle10,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle11,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle11,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle12,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle12,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle13,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle13,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle14,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle14,1];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[BorrowTitle15,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[BorrowTitle15,1];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[2,BorrowTitle1,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[2,BorrowTitle2,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle3,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle4,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle5,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle6,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle7,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle8,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle9,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle10,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle11,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle12,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:44 - Operation:Borrow Item;Loan Info:[2,BorrwTitle13,1,2017-10-10 08:08:11];State:Fail;Reason:Invalid ISBN.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,BorrowTitle14,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[May,May];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[May B,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[May B,1];State:Success
+@2017-10-10 20:08:11 INFO  String:60 - Operation:Borrow Item;Loan Info:[0,9781442667181,1,2017-10-10 08:08:11];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 20:08:11 INFO  String:64 - Operation:Borrow Item;Loan Info:[4,9781442668584,1,2017-10-10 08:08:11];State:Fail;Reason:The Item is Not Available.
+@2017-10-10 20:08:11 INFO  String:64 - Operation:Borrow Item;Loan Info:[3,9781442668584,1,2017-10-10 08:08:11];State:Fail;Reason:The Item is Not Available.
+@2017-10-10 20:08:11 INFO  String:41 - Operation:Borrow Item;Loan Info:[900,9781442616899,1,2017-10-10 08:08:11];State:Fail;Reason:Invalid User.
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[6,May B,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:44 - Operation:Borrow Item;Loan Info:[1,9781442616892,1,2017-10-10 08:08:11];State:Fail;Reason:Invalid ISBN.
+@2017-10-10 20:08:11 INFO  String:47 - Operation:Borrow Item;Loan Info:[1,9781442616899,2,2017-10-10 08:08:11];State:Fail;Reason:Invalid Copynumber.
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[maab,123];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Title,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title,1];State:Success
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New Title;Title Info:[Title1,Author];State:Fail;Reason:The ISBN already existed.
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Title1,2];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Remove1,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[Remove1,1];State:Success
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[oo,oo];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[8,Remove1,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[RemoveItemSucess3,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[RemoveItemSucess3,1];State:Success
+@2017-10-10 20:08:11 INFO  String:64 - Operation:Borrow Item;Loan Info:[8,Title1,1,2017-10-10 08:08:11];State:Fail;Reason:The Item is Not Available.
+@2017-10-10 20:08:11 INFO  String:96 - Operation:Delete Item;Item Info:[Remove1,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-10 20:08:11 INFO  String:100 - Operation:Delete Item;Item Info:[RemoveItem2,1];State:Fail;Reason:The Item Does Not Exist.
+@2017-10-10 20:08:11 INFO  String:93 - Operation:Delete Item;Item Info:[RemoveItemSucess3,N/A];State:Success
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[lauren,lauren];State:Success
+@2017-10-10 20:08:11 INFO  String:103 - Operation:Delete User;User Info:[lauren,lauren];State:Success
+@2017-10-10 20:08:11 INFO  String:49 - Operation:Create New User;User Info:[maab,123];State:Fail;Reason:The User already existed.
+@2017-10-10 20:08:11 INFO  String:57 - Operation:Borrow Item;Loan Info:[2,9781442616899,1,2017-10-10 08:08:11];State:Fail;Reason:The Maximun Number of Items is Reached.
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[deleteme,123];State:Success
+@2017-10-10 20:08:11 INFO  String:46 - Operation:Create New User;User Info:[Dan,Dan];State:Success
+@2017-10-10 20:08:11 INFO  String:103 - Operation:Delete User;User Info:[Dan,Dan];State:Success
+@2017-10-10 20:08:11 INFO  String:93 - Operation:Delete User;User Info:[N/A,N/A];State:Fail;Reason:The User Does Not Exist.
+@2017-10-10 20:08:11 INFO  String:107 - Operation:Delete User;User Info:[Zhibo@carleton.ca,Zhibo];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-10 20:08:11 INFO  String:112 - Operation:Delete User;User Info:[Michelle@carleton.ca,Michelle];State:Fail;Reason:Active Loan Exists.
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[ReturnItem,Author];State:Success
+@2017-10-10 20:08:11 INFO  String:45 - Operation:Create New Item;Item Info:[ReturnItem,1];State:Success
+@2017-10-10 20:08:11 INFO  String:54 - Operation:Borrow Item;Loan Info:[3,ReturnItem,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:177 - Operation:Return Item;Loan Info:[3,ReturnItem,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:184 - Operation:Return Item;Loan Info:[2,Title99,1,2017-10-10 08:08:11];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-10 20:08:11 INFO  String:177 - Operation:Return Item;Loan Info:[0,9781442668584,1,2017-10-10 08:08:11];State:Success
+@2017-10-10 20:08:11 INFO  String:110 - Operation:Apply OutStanding Fee;Fee Info:[1,0];State:Success
+@2017-10-10 20:08:11 INFO  String:154 - Operation:Pay Fine;Fee Info:[0,0];State:Success
+@2017-10-10 20:08:11 INFO  String:43 - Operation:Create New Title;Title Info:[Generic Title,Author];State:Success
 @
