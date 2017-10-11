@@ -66,6 +66,7 @@ public class ItemTable {
 		}
 		return result;
 	}
+	/*
 	public Object delete(String string, String string2) {
 		//Since the itemid and copynumber in is automatically assigned to the item,upon its creation.
 		//Each item has a unique itemid and copynumber.Even it is deleted,they can not be assigned to other item.
@@ -109,7 +110,7 @@ public class ItemTable {
 			}
 		}
 		
-	}
+	}*/
 	public List<Item> getItemTable() {
 		return itemList;
 	}

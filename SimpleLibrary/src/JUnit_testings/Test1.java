@@ -290,7 +290,7 @@ public class Test1 {
 		
 		
 	}
-	/*
+	
 	
 	@Test
 	public void testRemoveItem(){
@@ -320,6 +320,7 @@ public class Test1 {
 		assertEquals("this is useless","success", ItemTable.getInstance().delete("RemoveItemSucess3", id));
 		
 	}
+	/*
 	@Test
 	public void testRemoveTitle(){
 		TitleTable.getInstance().createtitle("RemoveTitle", "Author");
