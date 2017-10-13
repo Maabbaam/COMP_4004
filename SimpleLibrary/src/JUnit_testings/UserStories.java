@@ -16,57 +16,117 @@ public class UserStories {
 	
 	Test1 use = new Test1();
 	
+	/*
 	
 	
 	@Test
 	public void userStory1(){
 		
-		use.testMonitorSystem();
+		TitleTable.getInstance().createtitle("Fredie", "Author");
+		ItemTable.getInstance().createitem("Fredie");
+		
+		assertEquals("This should pass",true, UserTable.getInstance().createuser("Fred", "123") );
+		assertEquals("This should pass","success",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Fred"), "Fredie", "1", new Date() ));
+		
+		
+		
+		FeeTable.getInstance().applyfee(UserTable.getInstance().lookup("Fred"), 99999);
+		FeeTable.getInstance().getFeeTable().get(1).setFee(5);
+		
+		
+		
+		
+		assertEquals("this is useless","Outstanding Fee Exists", LoanTable.getInstance().renewal(UserTable.getInstance().lookup("Fred"), "Fredie", "1", new Date())) ;
+		assertEquals("success","Borrowing Items Exist", FeeTable.getInstance().payfine(UserTable.getInstance().lookup("Fred")) );
+		assertEquals("This should pass","success",LoanTable.getInstance().returnItem(UserTable.getInstance().lookup("Fred"), "Fredie", "1", new Date()));
+		assertEquals("sucess","success", FeeTable.getInstance().payfine(UserTable.getInstance().lookup("Fred")));
+		
+		assertEquals("This should pass",true, TitleTable.getInstance().createtitle("Frad", "Author"));
+		assertEquals("This should pass",true, ItemTable.getInstance().createitem("Frad"));
+		assertEquals("This should pass","success",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Fred"), "Frad", "1", new Date() ));
+		
+		assertEquals("this is useless","success", LoanTable.getInstance().renewal(UserTable.getInstance().lookup("Fred"), "Frad", "1", new Date())) ;
+		assertEquals("This should pass","success",LoanTable.getInstance().returnItem(UserTable.getInstance().lookup("Fred"), "Frad", "1", new Date()));
 		
 	}
 	
 	@Test
 	public void userStory2(){
 		
-		use.testCollectFine();
+		assertEquals("This should pass",true, UserTable.getInstance().createuser("Med", "123") );
+		
+		
+		TitleTable.getInstance().createtitle("Medz", "Author");
+		ItemTable.getInstance().createitem("Medz");
+		LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Med"), "Medz", "1", new Date());
+		
+		assertEquals("this is useless","Active Loan Exists", TitleTable.getInstance().delete("Medz"));
+		assertEquals("this is useless","Active Loan Exists", ItemTable.getInstance().delete("Medz", "1"));
+		
+		assertEquals("this is useless","Active Loan Exists", UserTable.getInstance().delete(UserTable.getInstance().lookup("Med")) );
+		
+		assertEquals("This should pass","The Loan Does Not Exist",LoanTable.getInstance().returnItem(UserTable.getInstance().lookup("Med"), "Title75", "1", new Date()));
+		
+		LoanTable.getInstance().returnItem(UserTable.getInstance().lookup("Med"), "Medz", "1", new Date());
+		assertEquals("this is useless","success", ItemTable.getInstance().delete("Medz", "1"));
+		assertEquals("this is useless","success", TitleTable.getInstance().delete("Medz"));
+	
+		assertEquals("this is useless","success", UserTable.getInstance().delete(UserTable.getInstance().lookup("Med")) );
+		
+		
 		
 	}
+	*/
 	@Test
 	public void userStory3(){
-		use.testRemoveTitle();
 		
+		assertEquals("This should pass",false, UserTable.getInstance().createuser("zhibo@carleton.ca" ,"zhibo"));
+		assertEquals("This should pass",true, UserTable.getInstance().createuser("Ace" ,"A"));
 		
-		use.testRemoveUser();
-		use.testRemoveItem();
+		assertEquals("This should pass","ISBN Invalid",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Ace"), "WrongTitle", "1", new Date() ));
+		assertEquals("This should pass",false, TitleTable.getInstance().createtitle("9781442668584" ,"By the grace of God"));
 		
-	}
-	@Test
-	public void userStory4(){
-		
-		use.addUserTest();
-		use.addTitleTest();
-		use.addItemTest();
+		assertEquals("This should pass",false, ItemTable.getInstance().createitem("WrongTitle" ));
+		//user leaves because title wasnt found
 		
 	}
-	@Test
-	public void userStory5(){
-		
-		use.testBorrowLoanCopy();
-		
-	}
-	@Test
-	public void userStory6(){
-		
-		use.testReturnItem();
-		
-	}
+
 	
-	@Test
-	public void userStory7(){
-		
-		use.testRenewLoan();
 	
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Old code Im not sure if i will need again. therefore wont delete it
+	
+	/*
+	
 	@Test
 	public void userStory8(){
 		TitleTable.getInstance().createtitle("SorrowTitle1", "Author");
@@ -184,7 +244,7 @@ public class UserStories {
 	}
 	
 	
-	
+	*/
 	
 	
 }

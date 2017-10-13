@@ -17,7 +17,7 @@ public class Test1 {
 	final String  user ="lauren";
 	final String  pass ="lauren";
 	
-	int callOnce = 0;
+	
 	
 	/*All things needed to be tested
 	 * AddUser 
@@ -50,10 +50,14 @@ public class Test1 {
 		 * therefore when the new User is added its index should be 5
 		 */
 		
-		UserTable.getInstance().createuser("maab", "123");
+		assertEquals("This should pass",true, UserTable.getInstance().createuser("maab", "123"));
 		
 		
-		assertEquals("This should pass",true, UserTable.getInstance().lookup(4) );
+	//	assertEquals("This should pass",true, UserTable.getInstance().lookup(4) );
+		
+		assertEquals("This should pass",false, UserTable.getInstance().createuser("zhibo@carleton.ca" ,"zhibo"));
+		
+		
 		
 	
 		
@@ -62,27 +66,22 @@ public class Test1 {
 	
 	@Test
 	public void addTitleTest(){
+		//
 		
-		TitleTable.getInstance().createtitle("Generic Title", "Author");
-		
-		assertEquals("This should pass",true, TitleTable.getInstance().lookup("Generic Title") );
-		
-	
+		assertEquals("This should pass",true,TitleTable.getInstance().createtitle("Generic Title", "Author"));
+		assertEquals("This should pass",false, TitleTable.getInstance().createtitle("9781442668584" ,"By the grace of God"));
 		
 	}
 	
 	@Test
 	public void addItemTest(){
-		
+		//Title must be created first before Item
 		TitleTable.getInstance().createtitle("Title", "Author");
-		ItemTable.getInstance().createitem("Title");
+		assertEquals("This should pass",true,ItemTable.getInstance().createitem("Title"));
 		
-		System.out.print(ItemTable.getInstance().getItemTable().get(ItemTable.getInstance().getItemTable().size()-1));
-		assertEquals("This should pass",true, ItemTable.getInstance().lookup("Title" ,"1") );
-		
-		
+		assertEquals("This should pass",false, ItemTable.getInstance().createitem("RRR" ));
 	}
-	
+	// These find tests are extra
 	@Test
 	public void findUser(){
 		
@@ -100,24 +99,15 @@ public class Test1 {
 	@Test
 	public void testBorrowLoanCopy(){
 		
+		//Here i am creating 10 items and titles so 
+		// so i can get the error "Max items reached
+		
 		TitleTable.getInstance().createtitle("BorrowTitle1", "Author");
 		ItemTable.getInstance().createitem("BorrowTitle1");
 		
 		TitleTable.getInstance().createtitle("Justs", "Author");
 		ItemTable.getInstance().createitem("Justs");
-		/*
-		if (usr== "Mazen"){
-			assertEquals("This should pass","The Item is Not Available",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Mazen"), book, "1", new Date())) ;
-			return;
-		}
-		
-		if (usr== "Just"){ 
-			assertEquals("This should pass","The Maximun Number of Items is Reached",LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Just"), "BorrowTitle14", "1", new Date())) ;
-			
-			return;
-			
-		}*/
-		
+	
 
 		TitleTable.getInstance().createtitle("BorrowTitle2", "Author");
 		ItemTable.getInstance().createitem("BorrowTitle2");
@@ -210,10 +200,23 @@ public class Test1 {
 		
 	}
 	
-	
-	
 	@Test
 	public void testCollectFine(){
+		
+		//Im going to be setting a fine to 
+		//a new user so i can get the error message
+		// that they must return their book first
+		// before paying the fine
+		
+		TitleTable.getInstance().createtitle("Fine", "Author");
+		ItemTable.getInstance().createitem("Fine");
+		
+		UserTable.getInstance().createuser("Fini", "123");
+		
+		LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Fini"), "Fine", "1", new Date());
+		FeeTable.getInstance().applyfee(1, 1);
+		FeeTable.getInstance().getFeeTable().get(1).setFee(5);
+		assertEquals("success","Borrowing Items Exist", FeeTable.getInstance().payfine(UserTable.getInstance().lookup("Fini")) );
 	
 		LoanTable.getInstance().returnItem(0, "9781442668584", "1", new Date()) ;
 		FeeTable.getInstance().applyfee(1, 1);
@@ -230,6 +233,8 @@ public class Test1 {
 	@Test
 	public void testRenewLoan(){
 
+		
+		// 
 		TitleTable.getInstance().createtitle("Title1", "Author");
 		ItemTable.getInstance().createitem("Title1");
 		
@@ -339,6 +344,18 @@ public class Test1 {
 	@Test
 	public void testRemoveTitle(){
 		TitleTable.getInstance().createtitle("RemoveTitle", "Author");
+		
+		
+		TitleTable.getInstance().createtitle("Remove4", "Author");
+		ItemTable.getInstance().createitem("Remove4");
+		
+		UserTable.getInstance().createuser("Remove", "34");
+		
+		LoanTable.getInstance().createloan(UserTable.getInstance().lookup("Remove"), "Remove4", "1", new Date() );
+		
+		assertEquals("this is useless","Active Loan Exists", TitleTable.getInstance().delete("Remove4"));
+		
+		
 		
 		assertEquals("this is useless","success", TitleTable.getInstance().delete("RemoveTitle"));
 	
