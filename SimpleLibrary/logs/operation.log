@@ -5543,4 +5543,42 @@
 @2017-10-13 01:09:17 INFO  String:44 - Operation:Borrow Item;Loan Info:[5,WrongTitle,1,2017-10-13 01:09:17];State:Fail;Reason:Invalid ISBN.
 @2017-10-13 01:09:17 INFO  String:46 - Operation:Create New Title;Title Info:[9781442668584,By the grace of God];State:Fail;Reason:The ISBN already existed.
 @2017-10-13 01:09:17 INFO  String:48 - Operation:Create New Item;Item Info:[WrongTitle,N/A];State:Fail;Reason:No such ISBN existed.
+@2017-10-13 03:42:26 INFO  String:23 - Operation:Initialize TitleTable;TitleTable: [[9781442668584,By the grace of God], [9781442616899,Dante's lyric poetry ], [9781442667181,Courtesy lost], [9781611687910,Writing for justice], [9781317594277,The act in context]]
+@2017-10-13 03:42:26 INFO  String:43 - Operation:Create New Title;Title Info:[Fredie,Author];State:Success
+@2017-10-13 03:42:26 INFO  String:25 - Operation:Initialize ItemTable;ItemTable: [[0,9781442668584,1], [1,9781442616899,1], [2,9781442667181,1], [3,9781611687910,1]]
+@2017-10-13 03:42:26 INFO  String:45 - Operation:Create New Item;Item Info:[Fredie,1];State:Success
+@2017-10-13 03:42:26 INFO  String:26 - Operation:Initialize UserTable;UserTable: [[0,Zhibo@carleton.ca,Zhibo], [1,Yu@carleton.ca,Yu], [2,Michelle@carleton.ca,Michelle], [3,Kevin@carleton.ca,Kevin], [4,Sun@carleton.ca,Sun]]
+@2017-10-13 03:42:26 INFO  String:46 - Operation:Create New User;User Info:[Fred,123];State:Success
+@2017-10-13 03:42:26 INFO  String:25 - Operation:Initialize LoanTable;LoanTable: [[0,9781442668584,1,2017-10-13 03:42:26,0]]
+@2017-10-13 03:42:26 INFO  String:100 - Operation:Apply OutStanding Fee;Fee Info:[0,0];State:Success
+@2017-10-13 03:42:26 INFO  String:126 - Operation:Initialize FeeTable;FeeTable: [[0,5]]
+@2017-10-13 03:42:26 INFO  String:54 - Operation:Borrow Item;Loan Info:[5,Fredie,1,2017-10-13 03:42:26];State:Success
+@2017-10-13 03:42:26 INFO  String:110 - Operation:Apply OutStanding Fee;Fee Info:[5,0];State:Success
+@2017-10-13 03:42:26 INFO  String:147 - Operation:Renew Item;Loan Info:[5,Fredie,1,2017-10-13 03:42:26];State:Fail;Reason:Outstanding Fee Exists.
+@2017-10-13 03:42:26 INFO  String:149 - Operation:Pay Fine;Fee Info:[5,5];State:Fail;Reason:Borrowing Items Exist.
+@2017-10-13 03:42:26 INFO  String:177 - Operation:Return Item;Loan Info:[5,Fredie,1,2017-10-13 03:42:26];State:Success
+@2017-10-13 03:42:27 INFO  String:154 - Operation:Pay Fine;Fee Info:[5,5];State:Success
+@2017-10-13 03:42:27 INFO  String:43 - Operation:Create New Title;Title Info:[Frad,Author];State:Success
+@2017-10-13 03:42:27 INFO  String:45 - Operation:Create New Item;Item Info:[Frad,1];State:Success
+@2017-10-13 03:42:27 INFO  String:54 - Operation:Borrow Item;Loan Info:[5,Frad,1,2017-10-13 03:42:27];State:Success
+@2017-10-13 03:42:27 INFO  String:132 - Operation:Renew Item;Loan Info:[5,Frad,1,2017-10-13 03:42:27];State:Success
+@2017-10-13 03:42:27 INFO  String:177 - Operation:Return Item;Loan Info:[5,Frad,1,2017-10-13 03:42:27];State:Success
+@2017-10-13 03:42:27 INFO  String:46 - Operation:Create New User;User Info:[Med,123];State:Success
+@2017-10-13 03:42:27 INFO  String:43 - Operation:Create New Title;Title Info:[Medz,Author];State:Success
+@2017-10-13 03:42:27 INFO  String:45 - Operation:Create New Item;Item Info:[Medz,1];State:Success
+@2017-10-13 03:42:27 INFO  String:54 - Operation:Borrow Item;Loan Info:[6,Medz,1,2017-10-13 03:42:27];State:Success
+@2017-10-13 03:42:27 INFO  String:89 - Operation:Delete Title;ISBN Info:[Medz];State:Fail;Reason:Active Loan Exists.
+@2017-10-13 03:42:27 INFO  String:96 - Operation:Delete Item;Item Info:[Medz,1];State:Fail;Reason:The item is currently on loan.
+@2017-10-13 03:42:27 INFO  String:112 - Operation:Delete User;User Info:[Med,123];State:Fail;Reason:Active Loan Exists.
+@2017-10-13 03:42:27 INFO  String:184 - Operation:Return Item;Loan Info:[6,Title75,1,2017-10-13 03:42:27];State:Fail;Reason:The Loan Does Not Exist.
+@2017-10-13 03:42:27 INFO  String:177 - Operation:Return Item;Loan Info:[6,Medz,1,2017-10-13 03:42:27];State:Success
+@2017-10-13 03:42:27 INFO  String:93 - Operation:Delete Item;Item Info:[Medz,N/A];State:Success
+@2017-10-13 03:42:27 INFO  String:109 - Operation:Delete Item Due to Title Deletion;ISBN Info:[Medz];State:Success
+@2017-10-13 03:42:27 INFO  String:86 - Operation:Delete Title;Title Info:[Medz,Author];State:Success
+@2017-10-13 03:42:27 INFO  String:103 - Operation:Delete User;User Info:[Med,123];State:Success
+@2017-10-13 03:42:27 INFO  String:49 - Operation:Create New User;User Info:[zhibo@carleton.ca,zhibo];State:Fail;Reason:The User already existed.
+@2017-10-13 03:42:27 INFO  String:46 - Operation:Create New User;User Info:[Ace,A];State:Success
+@2017-10-13 03:42:27 INFO  String:44 - Operation:Borrow Item;Loan Info:[7,WrongTitle,1,2017-10-13 03:42:27];State:Fail;Reason:Invalid ISBN.
+@2017-10-13 03:42:27 INFO  String:46 - Operation:Create New Title;Title Info:[9781442668584,By the grace of God];State:Fail;Reason:The ISBN already existed.
+@2017-10-13 03:42:27 INFO  String:48 - Operation:Create New Item;Item Info:[WrongTitle,N/A];State:Fail;Reason:No such ISBN existed.
 @

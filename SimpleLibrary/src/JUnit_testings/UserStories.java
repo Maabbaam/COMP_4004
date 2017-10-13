@@ -16,7 +16,7 @@ public class UserStories {
 	
 	Test1 use = new Test1();
 	
-	/*
+	
 	
 	
 	@Test
@@ -76,7 +76,7 @@ public class UserStories {
 		
 		
 	}
-	*/
+	
 	@Test
 	public void userStory3(){
 		
